@@ -4,6 +4,7 @@ jobs:
   test:
     strategy:
       matrix:
+        # chane to trigger action
         go-version: [1.14.x, 1.x]
         os: [ubuntu-latest]
         arch: ["", "386", "aarch64"]

@@ -30,6 +30,4 @@ jobs:
       - name: Checkout tc39 tests
         run: ./.tc39_test262_checkout.sh
       - name: Run tests
-        env:
-          GOARCH: ${{ matrix.arch }}
         run: go test -vet=off ./...
